@@ -5,14 +5,13 @@ Para realizar este ejercicio, deberás haber realizar los ejercicios anteriores 
 - ¿Qué es GitHub y cómo se usa?
 - ¿Qué es un sistema de control de versiones? Instalación de Git
 - ¿Qué es un IDE? Instalación del IDE (preferentemente Visual Studio Code)
-- Instalación de NodeJS 
-
+- Instalación de NodeJS
 
 ## 📝 Enunciado
 
-> 💡 Este ejercicio deberás realizarlo en el fichero `src/tema0.js`. 
+> 💡 Este ejercicio deberás realizarlo en el fichero `src/tema0.js`.
 
-En este ejercicio deberás implementar la función `checkAge()`, la cual recibe como parámetro un valor numérico y devuelte `True` si el valor es igual o superior a 18. Encontrarás el esqueleto de la función en el fichero `src/tema0.js`.
+En este ejercicio deberás implementar la función `checkAge()`, la cual recibe como parámetro un valor numérico y devuelve `True` si el valor es igual o superior a 18. Encontrarás el esqueleto de la función en el fichero `src/tema0.js`.
 
 Para ayudarte a su resolución, hemos preparado unos **tests** que comprobarán que tu solución es correcta. En la sección [Cómo ejecutar los tests](#cómo-ejecutar-los-tests) describimos cómo puedes ejecutar los tests.
 
@@ -24,7 +23,7 @@ Una vez termines el ejercicio, deberás enviar tus cambios para que se registren
 
 Para lanzar los tests deberás ejecutar esta instrucción en el Terminal de tu editor (en Visual Studio Code el Terminal lo puedes abrir a través del menú View / Terminal y aparecerá en la parte inferior de la pantalla)
 
-```
+```shell
 npm t
 ```
 
@@ -34,18 +33,18 @@ Como puedes esperar, la primera vez que ejecutes `npm t` y se lancen los tests, 
 
 Este es un ejemplo de una posible salida de error:
 
-```
+```text
  FAIL  src/tema0.test.js
   pec
     checkAge:
       × should return true when age is bigger or equal than 18
 ```
 
-Es importante fijarse en la descripción del error, por ejemplo, el texto de error anterior indica que para el ejercicio (relativo a la funcinón `checkAge`) la función debe devolver `true` si `age` es mayor o igial que 18. Esta indicación os ayuda a revisar el código para comprobar porqué el comportamiento no es el esperado.
+Es importante fijarse en la descripción del error, por ejemplo, el texto de error anterior indica que para el ejercicio (relativo a la función `checkAge`) la función debe devolver `true` si `age` es mayor o igual que 18. Esta indicación os ayuda a revisar el código para comprobar porqué el comportamiento no es el esperado.
 
 Una vez corregido el problema, en cuanto se guarda el fichero donde estamos editando los ejercicios, el test se vuelve a lanzar y nos mostraría:
 
-```
+```text
  PASS  src/tema0.js
   pec
     checkAge:
@@ -64,9 +63,8 @@ Para entregar el ejercicio, sigue estos pasos. Ten en cuenta que estos pasos est
 
 2. Abre la consola de git en tu ordenador ves al directorio donde se encuentra el archivo tema0.js y en ella ejecuta:
 
-```
+```shell
 git add tema0.js
 git commit -m "Submitting exercise"
 git push
 ```
-
